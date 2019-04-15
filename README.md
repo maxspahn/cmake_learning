@@ -38,9 +38,11 @@ Now we are going to understand what cmake does and how each of the CMakeLists.tx
 executable behind easy. Each file should have enough explanation to understand the procedure. 
 a)Look at the top layer CMakeLists and find out the projects name.
         -> cmake_learing/CMakeLists.txt
+
 b)In the first part, we focus on the src-code (and neglect "inp"). Look and the directory 
   structure again and remember what you found out in a), what do you expect in the CMakeLists.txt
   in cmake_learing/src/CMakeLists.txt? -> go look at it!
+
 c)We are getting closer to the source code, finally!
   Let's move to cmake_learning/src/easy/
   Open the file easy.cpp. The file contains a main-method. 
