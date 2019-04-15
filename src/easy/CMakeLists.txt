@@ -1,3 +1,4 @@
+# We set up a variable for all the source code.
 set(SOURCES
   easy.cpp)
 # The class printer is in the file printer.h/.cpp in the folder 
@@ -21,7 +22,7 @@ add_executable(merle
 add_executable(merlelib ${SOURCES})
 target_link_libraries(merlelib PrinterLib)
 
-
+# We set up the destination folder for both approaches.
 set(DESTINATION_FOLDER
   ${merleMax_SOURCE_DIR}/build/bin)
 
@@ -29,5 +30,6 @@ install(TARGETS merle RUNTIME DESTINATION bin DESTINATION ${DESTINATION_FOLDER})
 install(TARGETS merlelib RUNTIME DESTINATION bin DESTINATION ${DESTINATION_FOLDER})
 
 # This is another possibility to build an executable but without creating it in the build folder
+# This alternative is not treated in this tutorial.
 #install(FILES ${SOURCES}
 #  DESTINATION ${DESTINATION_FOLDER})
