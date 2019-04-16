@@ -63,5 +63,12 @@ d)In one of the two methods, a CMakeLists.txt in cmake_learning/src/classes/ is 
   Expert Question: There are two (which we have seen already) to build the library.
     Which? And what is the difference?
 
+5)
+In this second part you have to write parts of CMakeLists.txt yourself. 
+Look into the directory multi. There are two executables stored. Both should be compiled.
+Try to fix the errors in the two coresponding CMakeLists.txt.
+Which files must be modified?
+
+
 
 
