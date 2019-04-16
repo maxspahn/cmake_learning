@@ -12,9 +12,6 @@ find_package(Boost 1.40 COMPONENTS regex REQUIRED)
 # HINT: Use terminal outputs...the boost files may appear somehow
 #   hidden in a very general folder...
 include_directories(${Boost_INCLUDE_DIRS})
-# This line is not important for you.
-# It sets some requirements for the c++ version.
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # The following lines should be easy to understand.
 add_executable(regex regex.cpp)
