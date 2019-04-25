@@ -12,5 +12,6 @@ find_package(Threads)
 
 
 # Finally the installation path is set!
-install(TARGETS multi DESTINATION ${merleMax_SOURCE_DIR}/build/bin)
-install(TARGETS realTime DESTINATION ${merleMax_SOURCE_DIR}/build/bin)
+# You need to uncomment this
+#install(TARGETS multi DESTINATION ${merleMax_SOURCE_DIR}/bin)
+#install(TARGETS realTime DESTINATION ${merleMax_SOURCE_DIR}/bin)

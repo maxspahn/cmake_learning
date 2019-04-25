@@ -5,6 +5,8 @@ project(merleMax)
 
 # This sets some requirements for the c++ version.
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(merleMax_INCLUDE_DIR "${merleMax_SOURCE_DIR}/include")
+
 
 # We want to see the power of cmake in action now.
 # In the top layer there is the main CMakeLists.txt (which you

@@ -16,4 +16,4 @@ include_directories(${Boost_INCLUDE_DIRS})
 # The following lines should be easy to understand.
 add_executable(regex regex.cpp)
 target_link_libraries(regex ${Boost_LIBRARIES})
-install(TARGETS regex RUNTIME DESTINATION bin DESTINATION ${merleMax_SOURCE_DIR}/build/bin)
+install(TARGETS regex RUNTIME DESTINATION bin DESTINATION ${merleMax_SOURCE_DIR}/bin)

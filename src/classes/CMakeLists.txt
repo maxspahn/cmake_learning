@@ -3,5 +3,6 @@
 #   two different places (two seperate folders). 
 
 #   Do you know which?
-add_library(PrinterLib printer.cpp printer.h)
-install(TARGETS PrinterLib DESTINATION ${merleMax_SOURCE_DIR}/build/lib)
+add_library(PrinterLib printer.cpp)
+include_directories(PrinterLib ${merleMax_INCLUDE_DIR})
+install(TARGETS PrinterLib DESTINATION ${merleMax_SOURCE_DIR}/lib)
