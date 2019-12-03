@@ -16,4 +16,5 @@ set(merleMax_INCLUDE_DIR "${merleMax_SOURCE_DIR}/include")
 #    The following lines do exactly this and they expect a 
 #    CMakeLists.txt in each subdirectory. 
 add_subdirectory(src)
+add_subdirectory(test)
 add_subdirectory(inp)
