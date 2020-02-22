@@ -39,9 +39,10 @@ void* doRealTime(void* switchA){
   std::cout << switchA << std::endl;
   DataStore* storeA = (DataStore*)switchA;
   int statusA;
+  string m;
   while (true){
     statusA = storeA->getStatus();
-    string m = "Thread A : ";
+    m = "Thread A : ";
     m += to_string(statusA);
     std::cout << m << std::endl;
     sleep(1);
@@ -62,8 +63,10 @@ int main(int argc, char *argv[])
 {
   pthread_t realTimeThread;
   pthread_t userInputThread;
+/*
   int errorFlag = 0;
   long status = 0;
+*/
   DataStore data1(5);
   void* switchVar = &data1;
 

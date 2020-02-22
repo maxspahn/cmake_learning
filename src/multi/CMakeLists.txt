@@ -6,12 +6,15 @@ find_package(Threads)
 #   variable CMAKE_THREAD_LIBS_INIT
 # 1) multi
 # ----add code here----
+add_executable(multi multi.cpp)
+target_link_libraries(multi ${CMAKE_THREAD_LIBS_INIT})
 
 # 2) realTime
 # ----add code here----
+add_executable(realTime realTime.cpp)
+target_link_libraries(realTime ${CMAKE_THREAD_LIBS_INIT})
 
 
 # Finally the installation path is set!
-# You need to uncomment this
-#install(TARGETS multi DESTINATION ${merleMax_SOURCE_DIR}/bin)
-#install(TARGETS realTime DESTINATION ${merleMax_SOURCE_DIR}/bin)
+install(TARGETS multi DESTINATION ${merleMax_SOURCE_DIR}/bin)
+install(TARGETS realTime DESTINATION ${merleMax_SOURCE_DIR}/bin)
